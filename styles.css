@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('images/bg-pattern-top.svg'),  url('images/bg-pattern-bottom.svg');
+    background-position: top left, bottom right;
+    background-position-x: -100px, 700px;
+    background-position-y: -400px, 400px;
+    background-size: 50%, 50%;
+    background-repeat: no-repeat, no-repeat;
+    background-color: hsl(185, 75%, 39%);
+    position: relative;
+    margin-left: 60px;
+    margin-right:60px;
+    margin-top: 60px;
+}
+
+#container {
+    font-family: "Kumbh Sans", sans-serif;
+    font-size:18px;
+    font-weight: 400;
+    min-width:300px;
+    width:500px;
+    height:500px;
+    max-height: 600px;
+    margin:auto;
+    background-color:white;
+    border-radius: 20px;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    /*grid-template-rows: [row-start] 1fr [row-2] 1fr;*/
+    
+    grid-template-areas: 
+    "a"
+    "b"
+    "c";
+}
+
+.cover, img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+#avatar{
+    width: 50%;
+    border-radius: 100%;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top:-90px;
+}
+
+.avatarcontainer > img{
+    margin:auto;
+    border: 6px solid white;
+    border-radius: 100%;
+    margin-bottom:20px;
+}
+.cover{
+    grid-area: a;
+}
+
+.info {
+    grid-area: b;
+    margin:auto;
+    padding:2rem;
+    color:hsl(0, 0%, 59%);
+
+}
+
+#name{
+    margin-top: 50px;
+    margin-bottom:10px;
+    display: inline;
+    color:hsl(227, 10%, 46%);
+    font-weight: 700;
+}
+
+#age {
+    color:hsl(0, 0%, 59%);
+    font-weight: 400;
+}
+#location{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.profile{
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.stats{
+    border-top: 1px solid hsl(0, 0%, 59%);
+    background-color:white;
+    text-align: center;
+    padding:2rem;
+    color:hsl(229, 23%, 23%);
+    grid-area: c;
+}
+
+#container,.stats{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+
+.topnum {
+    display: inline;
+    text-align: center;
+  font-weight: 700;
+  color:hsl(227, 10%, 46%);
+  padding: 40px;
+  float:inline-start;
+}
+.bottomtext {
+    text-align: center;
+    font-weight: 400;
+    display: inline;
+    color:hsl(0, 0%, 59%);
+    margin-bottom: 40px;
+    padding-right: 60px;
+    padding-left: 20px;
+  float:inline-end;
+}
+
+
+
+
+/*  */
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
+
+/*
+#followers > .topnum{
+    float:left;
+}
+#followers > .bottomtext{
+    clear:both;
+}
+
+#likes> .topnum{
+    float:right;
+}
+#likes > .bottomtext{
+    clear:both;
+}
+#photos > .topnum{
+    float:right;
+}
+#photos > .bottomtext{
+    clear:both;
+}*/
